@@ -400,7 +400,7 @@ LF282: STA    WSYNC
        STA    ENABL
        STA    GRP0
        STA    GRP1
-       LDA    $00
+       LDA    $E4
        STA    COLUBK
        LDA    $81
        STA    RESP0
@@ -1346,7 +1346,7 @@ LF9C1: LDA    $C8
        STA    $E1
 LF9D3: LDA    $DE
        STA    COLUP0
-       LDA    $0E
+       LDA    $E3
        STA    COLUBK
        LDA    $E2
        STA    COLUPF
@@ -1649,7 +1649,7 @@ LFBFD: RTS
        .byte $00 ; |        | $FC07
        .byte $00 ; |        | $FC08
        .byte $00 ; |        | $FC09
-       .byte $E7 ; |XXX  XXX| $FC0A
+       .byte $F6 ; |XXX  XXX| $FC0A
        .byte $65 ; | XX  XX | $FC0B
        .byte $7E ; | XXXXXX | $FC0C
        .byte $7E ; | XXXXXX | $FC0D
